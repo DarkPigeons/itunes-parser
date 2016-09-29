@@ -1,15 +1,7 @@
-import re, argparse, math
-import sys, os
+import sys, os, math
 import matplotlib.pyplot as plt
 import plistlib
 import numpy
-
-
-'''
-sizes = []
-sizes.append(round(track_info["Size"] / 80000)) # megabytes
-len(sizes) == 0 or
-'''
 
 def find_duplicates(file_name):
     '''
@@ -131,14 +123,3 @@ def largestSizeFile(file_name):
     for track_id, track_info in tracks.items():
         if 1==1:
             print(1)
-
-
-largestSizeFile("/Users/arnavmahajan/Desktop/pp-master/playlist/test-data/pl1.xml")
-
-#plotDurations("/Users/arnavmahajan/Desktop/pp-master/playlist/test-data/pl1.xml")
-
-# find_common_tracks(["/Users/arnavmahajan/Desktop/pp-master/playlist/test-data/pl1.xml",
-#  "/Users/arnavmahajan/Desktop/pp-master/playlist/test-data/pl2.xml"])
-# find_common_tracks("/Users/arnavmahajan/Desktop/pp-master/playlist/test-data/mymusic.xml")
-# print(find_duplicates("/Users/arnavmahajan/Desktop/pp-master/playlist/test-data/pp1.xml"))
-# print(find_duplicates("/Users/arnavmahajan/Desktop/Python/Python Playground/iTunes Music Library.xml"))
