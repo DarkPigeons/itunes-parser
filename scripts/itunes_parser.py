@@ -115,11 +115,4 @@ def plotDurations(file_name):
     plt.ylabel("Number of Tracks")
     plt.show()
 
-def largestSizeFile(file_name):
-    plist = plistlib.readPlist(file_name)
-    tracks = plist["Tracks"]
-    durations = {}
-    print(tracks)
-    for track_id, track_info in tracks.items():
-        if 1==1:
-            print(1)
+
